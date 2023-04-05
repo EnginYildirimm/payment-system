@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.chip {
+  font-size: 40px;
+}
+.three {
+  color: rgb(112, 112, 112);
+  font-size: 20px;
+}
