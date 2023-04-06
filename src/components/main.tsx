@@ -4,7 +4,6 @@ import { products, ProductType } from "../data/products";
 
 type Props = {
   total: number;
-  setTotal: (param: number) => void;
   basket: ProductType[];
   setBasket: (param: ProductType[]) => void;
 };

@@ -5,6 +5,8 @@ type Props = {
   setVisiblecard: (param: boolean) => void;
   visiblecode: boolean;
   setVisiblecode: (param: boolean) => void;
+  messages: Number;
+  setMessages: (param: Number) => void;
 };
 
 const Paymentpage: FC<Props> = (props) => {

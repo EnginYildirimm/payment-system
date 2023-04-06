@@ -3,7 +3,6 @@ import React, { FC, useState } from "react";
 
 type Props = {
   total: number;
-  setTotal: (param: number) => void;
   basket: ProductType[];
   setBasket: (param: ProductType[]) => void;
   visiblecard: boolean;
@@ -14,7 +13,6 @@ const Basket: FC<Props> = (props) => {
   const total = props.basket.reduce((prev, current) => {
     return prev + current.price;
   }, 0);
-  props.setTotal(total);
   const handleDelete = () => {
     props.setBasket([]);
   };
@@ -23,17 +21,17 @@ const Basket: FC<Props> = (props) => {
   };
   return (
     <div>
-      <div className="bg-gray-100 h-[10rem] mt-[7.1rem] flex justify-center items-center">
+      <div className="bg-gray-100 h-[10rem] w-[300px] flex justify-center items-center  rounded-xl ">
         <div className="">
           <div className="text-green-600 font-bold text-3xl text-center">
             TOTAL : {total} TL
           </div>
 
           <div className="flex gap-2 justify-center mt-5">
-            <div className="text-white bg-red-600 p-2 font-bold text-center">
+            <div className="text-white bg-red-600 p-2 font-bold text-center rounded-sm">
               <button onClick={handleDelete}>CLEAR BASKET</button>
             </div>
-            <div className="text-white bg-blue-600 p-2 font bold text-center">
+            <div className="text-white bg-blue-600 p-2 font bold text-center rounded-sm ">
               <button onClick={handlevisible}>GET PAY</button>
             </div>
           </div>
