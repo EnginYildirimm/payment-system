@@ -25,7 +25,7 @@ const Card: FC<Props> = (props) => {
         </div>
         <div className="">
           <div className="text-xl  text-center text-gray-700 font-semibold">
-            <span>{card.cardnumber}</span>
+            <span className="tracking-[3px]">{card.cardnumber}</span>
           </div>
           <div className="text-xs  text-center">
             <span>{card.validthru}</span>

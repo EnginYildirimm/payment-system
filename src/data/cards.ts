@@ -10,7 +10,7 @@ export const cards: CardType[] = [
   {
     id: 1,
     title: "BANK CARD",
-    cardnumber: "1234 5678 9123 4567",
+    cardnumber: "1234567891234567",
     validthru: "07/26",
     name: "ENGİN YILDIRIM",
     cvc: 123,
@@ -18,7 +18,7 @@ export const cards: CardType[] = [
   {
     id: 2,
     title: "CREDİT CARD",
-    cardnumber: "9876 5432 1987 6543",
+    cardnumber: "9876543219876543",
     validthru: "07/26",
     name: "ENGİN YILDIRIM",
     cvc: 321,
